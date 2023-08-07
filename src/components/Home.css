@@ -1,0 +1,127 @@
+
+
+
+.about-me-btn{
+    border: 2px solid aqua;
+    padding: 10px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 1s;
+    
+    
+}
+.about-me-btn:hover{
+    background-color: aqua;
+    color: black;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.name{
+    font-family: 'Times New Roman', Times, serif;
+  
+    margin-bottom: 0px;
+}
+.role{
+    
+    font-size: 20px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+}
+.logo-img{
+    height: 220px;
+    border: 2px solid aqua;
+    transition: 1s ease ;
+    border-radius: 110px;
+}
+.logo-img:hover{
+    transform:scale(1.1) ;
+
+
+}
+.home-container{
+    background-image: url('https://res.cloudinary.com/dwoafhj8h/image/upload/v1663770101/jeremy-bishop-G9i_plbfDgk-unsplash_txx0ek.jpg');
+
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.logo-container{
+    margin-bottom: 20px;
+}
+.description{
+    width: 350px;
+    margin-bottom: 60px;
+}
+.objective{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.name {
+    font-size: 1.6rem;
+    font-weight: 800;
+   
+    overflow: hidden; /* Hide the text until the animation starts */
+    width: max-content;
+    text-align: center;
+    margin: 100px auto; /* Centers the text */
+    letter-spacing: 0.15em; /* Add spacing between the characters */
+    white-space: nowrap; /* keeps text in one line */
+    font-family: 'Times New Roman';
+  
+    margin-bottom: 0px;
+    
+    animation: typing 5s steps(36, end);
+  }
+  
+  /* The typewriter animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @media screen  and (max-width:650px){
+    .logo-img{
+        height: 180px;
+        border-radius: 90px;
+        margin-bottom: 0px;
+       
+
+    }
+    .name{
+        font-size: 1.4rem;
+        margin-top: 5px;
+    }
+    .home-container{
+        padding: 25px;
+        flex-direction: column;
+       justify-content:flex-start;
+       align-items: center;
+       text-align: center;
+       padding-top: 50px;
+        
+    }
+    .role{
+        font-size: 20px;
+    }
+    .objective{
+        font-size: 18px;
+    }
+    .logo-container{
+        order: 1;
+        margin-top: 0px;
+    }
+    .description{
+        order: 2;
+        margin-bottom: 0px;
+        width: auto;
+    }
+
+  }

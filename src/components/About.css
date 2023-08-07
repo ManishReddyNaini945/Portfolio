@@ -1,0 +1,83 @@
+.about-me-paragraph{
+    color: black;
+   
+    font-size: 20px;
+    font-family: "Sans-Serif";
+    list-style-type:disc;
+    padding-bottom: 15px;
+
+}
+.about-container{
+    background:linear-gradient( rgb(62, 163, 181), #66ffcc );
+    padding-top: 10px;
+   height: 100vh;
+    background-size: cover;
+   
+}
+.about-me-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    padding-left: 150px;
+}
+.about-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.about-image{
+    height: 450px;
+    border-radius: 10px;
+    border: 2px solid aqua;
+    transition: 1s ease;
+}
+.about-image:hover{
+    transform: scale(1.1);
+}
+.description-container{
+    width: 600px;
+    text-align: justify;
+    order: 2;
+    background:linear-gradient( rgb(62, 163, 181), #66ffcc );
+    border-radius: 5px;
+    padding: 20px;
+    transition: 1s ease;
+    
+}
+.description-container:hover{
+    transform: scale(1.1);
+}
+.about-image-container{
+    order: 1;
+}
+@media screen and (max-width:650px) {
+    .about-card{
+        flex-direction: column;
+        height: 100vh;
+
+    }
+    .description-container{
+        width: auto;
+        padding-top: 10px;
+        background: none;
+        transition: none;
+     
+       }
+       .description-container:hover{
+        transform: none;
+       }
+    .about-image{
+        height: 400px;
+        
+    }
+    .about-me-paragraph{
+        font-size: 16px;
+        font-family: "Sans-Serif";
+    }
+    .about-me-heading{
+        padding-bottom: 20px;
+    }
+    .about-container{
+        height: 140vh;
+    }
+} 

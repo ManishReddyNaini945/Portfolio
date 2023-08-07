@@ -1,0 +1,35 @@
+.tech-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.tech-card{
+    background:linear-gradient( rgb(62, 163, 181), #66ffcc );
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 500px;
+    transition: 1s ease;
+}
+
+@media screen  and (max-width:600px){
+    .tech-card{
+        width: 300px;
+
+    }
+    
+}
+.tech-description{
+    padding-bottom: 5px;
+  
+    list-style-type: circle;
+}
+.tech-card:hover{
+    transform: scale(1.1);
+}
